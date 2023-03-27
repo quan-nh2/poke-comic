@@ -3,12 +3,15 @@ module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./layouts/**/*.{js,ts,jsx,tsx}",
+    "./features/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     fontFamily: {
-      sans: ['Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
-      serif: ['Georgia', 'serif'],
-      mono: ['Roboto Mono', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+      primary: 'Orbitron',
+      secondary: 'Rajdhani',
+      tertiary: 'Aldrich',
     },
     container: {
       padding: {
