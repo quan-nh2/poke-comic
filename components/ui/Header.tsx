@@ -3,6 +3,8 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { GiHeartWings } from 'react-icons/gi';
+
 const Header = () => {
   return (
     <header className='py-2 divide-y' id='home'>
@@ -11,8 +13,10 @@ const Header = () => {
           <Link href='/'>
             <Image src='/logo.png' alt='My Logo' width={50} height={50} />
           </Link>
+          <GiHeartWings size={36} className='text-amber-500' />
         </div>
       </div>
+
       <div className='mt-2'></div>
     </header>
   );
