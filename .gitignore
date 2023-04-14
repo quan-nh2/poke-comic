@@ -37,3 +37,4 @@ next-env.d.ts
 
 # visual studio code
 .visual
+.vscode
