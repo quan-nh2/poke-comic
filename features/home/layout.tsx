@@ -8,7 +8,7 @@ const HomePageLayout = () => {
   return (
     <div className='justify-center text-center mx-auto bg-sky-50 px-4 pb-24'>
       {posts.map((post) => (
-        <div key={post.id} className='max-w-2xl mx-auto mb-8'>
+        <div key={post.id} className='max-w-2xl mx-auto mb-16'>
           <Image
             className='rounded-md mb-4'
             src={post.thumbnailUrl}
@@ -16,7 +16,7 @@ const HomePageLayout = () => {
             width={500}
             height={400}
           />
-          <div className='text-left px-4'>
+          <div className='text-left'>
             <h1 className='text-2xl font-semibold'>{post.title}</h1>
             <p className='text-md text-amber-600 italic'>{post.description}</p>
           </div>

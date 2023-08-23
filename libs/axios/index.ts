@@ -1,5 +1,3 @@
-import { PagePath } from '@/layouts/shared';
-
 import axios, { AxiosResponse } from 'axios';
 
 type AxiosErrorResponse = {
@@ -23,8 +21,6 @@ instance.interceptors.response.use(
   },
   async ({ response }) => {
     const { data } = response || {};
-    const { status } = response || {};
-    const { code } = data || {};
 
     return Promise.reject(data);
   }
